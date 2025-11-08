@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 import os
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,7 +26,9 @@ SECRET_KEY = 'django-insecure-s3u#vpgn$-_c)m9hp40q(^4-wciv&y^t!9bp_kv^vebtqyax^d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'kokchoy-uz.onrender.com', '127.0.0.1', 'localhost', '*' ]
+ALLOWED_HOSTS = [ 'kokchoy-uz.onrender.com', '127.0.0.1', 'localhost' ]
+
+CSRF_TRUSTED_ORIGINS = ['https://kokchoy-uz.onrender.com']
 
 
 # Application definition
